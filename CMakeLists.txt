@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 list(APPEND LIBSRC bmfconvert.cpp)
-add_library(bmfconvert SHARED ${LIBSRC})
+add_library(bmfconvert STATIC ${LIBSRC})
 target_include_directories(bmfconvert PUBLIC include)
 
 list(APPEND SRC bmftohex.cpp)
